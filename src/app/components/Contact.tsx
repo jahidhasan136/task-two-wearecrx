@@ -1,11 +1,14 @@
-import React from "react";
+"use client";
+
+import siteDataJson from "../../../site-data.json";
 
 const Contact = () => {
   return (
-    <>
-      <p>Phone: phone</p>
-      <p>Address: address</p>
-    </>
+    <div>
+      <h2>Contact {siteDataJson?.title}</h2>
+      <p>Phone: {siteDataJson?.phone}</p>
+      <p>Address: {siteDataJson?.address}</p>
+    </div>
   );
 };
 
